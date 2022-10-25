@@ -1,0 +1,24 @@
+{
+  "include": ["lib/**/*"],
+  "exclude": ["node_modules", "test", "example"],
+  "compilerOptions": {
+    "module": "commonJs",
+    "allowJs": true,
+    "jsx": "react",
+    "importHelpers": false,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true,
+    "rootDir": "lib",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "lib": ["es2017", "dom"],
+    "target": "es2015",
+    "sourceMap": true
+  }
+}
