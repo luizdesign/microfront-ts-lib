@@ -7,12 +7,5 @@ module.exports = () => {
     transform: {
       '\\.ts?$': 'babel-jest',
     },
-    coverageThreshold: {
-      global: {
-        branches: 80,
-        functions: 80,
-        statements: 80,
-      },
-    },
   };
 };
