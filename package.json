@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "dayjs": "^1.11.6",
     "debug": "^4.3.4"
   }
 }

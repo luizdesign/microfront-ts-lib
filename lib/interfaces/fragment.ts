@@ -1,5 +1,5 @@
 export interface FragmentAttributes {
-  href: string | null;
+  href: string;
   cache: string | null;
   primary: boolean;
 }

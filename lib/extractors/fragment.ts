@@ -1,3 +1,4 @@
+import FragmentException from "../exceptions/fragment-exception";
 import { FragmentAttributes, ParsedFragment } from "../interfaces/fragment";
 
 const fragmentPattern = new RegExp(/<fragment [^>]+>/, 'gm');
@@ -26,6 +27,10 @@ const fragmentAttributes = (fragmentTag: string): FragmentAttributes => {
   const href = getFragmentAttributeValueByName(fragmentTag, hrefAttributePattern);
   const cache = getFragmentAttributeValueByName(fragmentTag, cacheAttributePattern);
   const primary = primaryAttributePattern.test(fragmentTag);
+
+  if (href === null) {
+    throw new FragmentException('The fragment must have an href attribute');
+  }
 
   return {
     href,
