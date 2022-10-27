@@ -6,8 +6,6 @@ The main idea is merge different fragment sources into a single template to serv
 This project was idealized on the [Tailor Project](https://github.com/zalando/tailor).
 
 ## Benefits
-Some of Spalatum features and benefits:
-
 * **Enable SSR**: the server side render (SRR) is important for SEO and fastens the initial render.
 * **Cache Management**: enable use the `cache` attribute in the `<fragment>` tag, to control the cache time. It active a best performance reducing unnecessary requests.
 
